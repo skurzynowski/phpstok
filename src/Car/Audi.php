@@ -14,19 +14,19 @@ class Audi implements Car {
   private $airbag;
 
   public function __construct( string $how_many_pk ){
-    $this->wheels = $how_many_wheels;
+    $this->pk = $how_many_pk;
   }
 
   public function setAirbag(Airbag $airbag){
      $this->airbag = $airbag;
   }
 
-  public function printPk(){
-    echo "PK: " . $this->pk;
+  public function getPk():string{
+    return "PK: " . $this->pk;
   }
 
-  public function blowAirbags(){
-    $this->airbag->blow();
+  public function blowAirbags():string{
+     return $this->airbag->blow();
   }
 
 }

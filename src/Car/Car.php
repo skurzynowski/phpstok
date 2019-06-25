@@ -6,6 +6,6 @@ namespace Phpstok\Car;
  * Airbag interface
  */
 interface Car {
-  public function printPk();
-  public function blowAirbags();
+  public function getPk():string;
+  public function blowAirbags():string;
 }
